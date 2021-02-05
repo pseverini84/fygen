@@ -1211,7 +1211,7 @@ def _make_volts_command(channel, max_volts, volts):
   if volts > max_volts:
     raise InvalidVoltageError('volts is too high: %g > %g' % (volts, max_volts))
 
-  return _make_command(channel, 'A%.2f' % volts)
+  return _make_command(channel, 'A%.4f' % volts)
 
 
 def _make_duty_cycle_command(channel, duty_cycle):

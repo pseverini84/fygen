@@ -176,7 +176,7 @@ def _make_arb(count, start_dict):
     start_dict = dict((k, v+1) for k, v in six.iteritems(start_dict))
 
 # Add arb1, arb2 ... arb64
-_make_arb(64, {':0': 34, ':1': 33})
+_make_arb(64, {':0': 36, ':1': 35})
 
 def _generate_waveform_id_dict():
   """Maps _WAVEFORM_DEFS -> _WAVEFORM_IDS.
